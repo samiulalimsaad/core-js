@@ -19,11 +19,11 @@ Programmer.prototype = Object.create(Person.prototype);
 Programmer.prototype.constructor = Programmer;
 
 Programmer.prototype.getSkills = function () {
-    console.log(this.skills);
+    return this.skills;
 };
 
 const p1 = new Programmer("aaa", 11, "JS", ["JS"]);
 console.dir(p1);
 
 const p2 = new Programmer("bbb", 22, "TS", ["TS"]);
-console.log(p2.eat());
+console.log(p2.getSkills());
